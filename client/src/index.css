@@ -17,8 +17,9 @@ body {
   background-color: #0f0e13;
   background-image: 
     radial-gradient(at 0% 0%, #000000 0, transparent 50%),
-    radial-gradient(at 50% 0%, #E9C46A 0, transparent 50%),
-    radial-gradient(at 100% 0%, #E9C46A 0, transparent 50%);
+    radial-gradient(at 33.33% 0%, #FFD653FF 0, transparent 50%),
+    radial-gradient(at 66.66% 0%, #DDB65DFF 0, transparent 50%),
+    radial-gradient(at 100% 0%, #EEB238FF 0, transparent 50%);
 }
 
 .gradient-bg-services {
@@ -60,16 +61,16 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.eth-card {
-  background-color:#a099ff;
-  background-image: 
-    radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%), 
-    radial-gradient(at 67% 20%, hsla(357,94%,71%,1) 0, transparent 59%), 
-    radial-gradient(at 88% 35%, hsla(222,81%,65%,1) 0, transparent 50%), 
-    radial-gradient(at 31% 91%, hsla(9,61%,61%,1) 0, transparent 52%), 
-    radial-gradient(at 27% 71%, hsla(336,91%,65%,1) 0, transparent 49%), 
-    radial-gradient(at 74% 89%, hsla(30,98%,65%,1) 0, transparent 51%), 
-    radial-gradient(at 53% 75%, hsla(174,94%,68%,1) 0, transparent 45%);
+.eth-card { /* https://www.csshero.org/mesher/ */
+  background-color:#99c3ff;
+  background-image:
+    radial-gradient(at 10% 34%, hsla(210,89%,63%,1) 0px, transparent 50%),
+    radial-gradient(at 28% 64%, hsla(328,73%,66%,1) 0px, transparent 50%),
+    radial-gradient(at 90% 32%, hsla(299,68%,74%,1) 0px, transparent 50%),
+    radial-gradient(at 49% 0%, hsla(48,84%,63%,1) 0px, transparent 50%),
+    radial-gradient(at 17% 61%, hsla(2,93%,79%,1) 0px, transparent 50%),
+    radial-gradient(at 29% 21%, hsla(336,68%,65%,1) 0px, transparent 50%),
+    radial-gradient(at 48% 18%, hsla(239,93%,72%,1) 0px, transparent 50%);
 }
 
 .text-gradient {
