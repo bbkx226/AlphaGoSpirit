@@ -4,28 +4,46 @@
 // You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
-const hre = require("hardhat");
 
-async function main() {
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const ONE_YEAR_IN_SECS = 365 * 24 * 60 * 60;
-  const unlockTime = currentTimestampInSeconds + ONE_YEAR_IN_SECS;
+const hre = require("hardhat"); 
+// Javascript without type: "module" will require this kind of method to import library, and obviously we are using hardhat
 
-  const lockedAmount = hre.ethers.utils.parseEther("1");
+const main = async () => {
+  
+  // async/await is kind of like the code will only execute after the `promises` are returned
+  // Why we need it? It's because Javascript is a synchronous single-threaded language
+  // So async/await allows programmer to write asynchronous code in a more synchronous way
 
-  const Greeter = await hre.ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy(unlockTime, { value: lockedAmount });
+  // A function call in the Ethers.js library used  to create a contract factory object that can be used to deploy, interact with, and manage a smart contract on the Ethereum blockchain.
+  // The argument "Transactions" is the name of the Solidity contract to be compiled and deployed.
+  const Transactions = await hre.ethers.getContractFactory("Transactions");
+  
+  console.log('Deploying Box...');
 
-  await greeter.deployed();
+  // Once the contract factory object is created, it can be used to deploy the smart contract to the Ethereum blockchain by calling `deploy()`
+  const transactions = await Transactions.deploy();
 
-  console.log(
-    `Lock with 1 ETH and unlock timestamp ${unlockTime} deployed to ${lock.address}`
+  // waits for the deployment of a smart contract to the blockchain network.
+  await transactions.deployed();
+
+  console.log( // convenient during the debugging session, telling the user/programmer the contract has been deployed to which wallet (via address)
+    `Transactions deployed to ${transactions.address}`
   );
 }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+const runMain = async () => {
+  try { // Run the code and see if all functions have been execute successfully
+    await main();
+    process.exit(0);
+
+  } catch (error) { // If not, the program jumped to this section and execute console.log() to reveal the bug & error
+
+    console.error(error);
+    process.exit(1);
+
+  }
+}
+
+runMain();
