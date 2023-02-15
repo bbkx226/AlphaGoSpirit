@@ -11,7 +11,7 @@ export const TransactionContext = React.createContext();
 
 // Using destructuring assignment to extract the ethereum object from the window object in the browser
 const { ethereum } = window; // type window.ethereum in console for specific details
-const createEthereumContract = async () => {
+const createEthereumContract = () => {
   //a Web3Provider object is created using the ethereum object that was previously extracted from the window object. 
   // The Web3Provider is a class provided by the ethers.js library that allows interaction with the Ethereum network.
   const provider = new ethers.providers.Web3Provider(ethereum);
@@ -23,8 +23,7 @@ const createEthereumContract = async () => {
     // 1. contractAddress: the address of the smart contract on the blockchain.
     // 2. contractABI: the Application Binary Interface (ABI) of the contract, which defines the methods and events that can be called on the contract.
     // 3. signer: the Signer object obtained from the Web3Provider.
-  const transactionsContract = new ethers.Contract(contractABI, contractAddress, signer);
-
+  const transactionsContract = new ethers.Contract(contractAddress, contractABI, signer);
   return transactionsContract;
 };
 
@@ -54,9 +53,7 @@ export const TransactionsProvider = ({ children }) => { // The magic of useState
           keyword: transaction.keyword,
           amount: parseInt(transaction.amount._hex) / (10 ** 18)
         }));
-
-        console.log(structuredTransactions);
-
+        
         setTransactions(structuredTransactions);
       } else {
         console.log("Ethereum is not present");
@@ -119,7 +116,7 @@ export const TransactionsProvider = ({ children }) => { // The magic of useState
         })
       }
 
-      const accounts = await ethereum.request({ method: "eth_requestAccounts" });
+      const accounts = await ethereum.request({ method: "eth_requestAccounts", });
 
       setCurrentAccount(accounts[0]);
 

@@ -1,7 +1,7 @@
 {
-  "name": "client",
+  "name": "opt1cal",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,7 +13,7 @@
     "autoprefixer": "^10.4.13",
     "buffer": "^6.0.3",
     "eth-revert-reason": "^1.0.3",
-    "ethers": "^6.0.3",
+    "ethers": "^5.5.1",
     "framer-motion": "^9.0.2",
     "postcss": "^8.4.21",
     "react": "^18.2.0",

@@ -5,6 +5,7 @@
 // SPDX-License-Identifier: UNLICENSED (there are no licensing restrictions on its use or distribution)
 pragma solidity ^0.8.17; // solidity version
 
+import "../node_modules/hardhat/console.sol";
 contract Transactions { // Defines the start of the Solidity contract
     uint256 transactionCount; // Declares a state variable named "transactionCount" of type uint256 
     // UINT is unsigned, its first bit (Most Significant Bit (MSB)) is not reserved for signing. Thus, range 0 < x <  4294967295 decimal

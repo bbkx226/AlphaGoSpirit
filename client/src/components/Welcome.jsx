@@ -42,7 +42,7 @@ const Welcome = () => {
             Hi there, <br /> We are Opac1ty!
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-8/12 w-11/12 text-base">
-            Enter the realm of crypto. Easily trade cryptocurrencies on "logo name".
+            Enter the realm of crypto. Easily trade cryptocurrencies on Opac1ty.
           </p>
           {!currentAccount && (
             <button

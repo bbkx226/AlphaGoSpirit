@@ -36,7 +36,7 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
         </div>
         <img
           src={gifUrl || url}
-          alt="nature"
+          alt="A random pic"
           className="w-full h-64 2xl:h-96 rounded-md shadow-lg object-cover"
         />
         <div className="bg-black p-3 px-5 w-max rounded-3xl -mt-5 shadow-2xl">
@@ -64,7 +64,7 @@ const Transactions = () => {
         )}
 
         <div className="flex flex-wrap justify-center items-center mt-10">
-          {[...dummyData, ...transactions].reverse().map((transaction, i) => (
+          {[...dummyData, ...transactions].slice(0, 6).reverse().map((transaction, i) => (
             <TransactionsCard key={i} {...transaction} />
           ))}
         </div>
