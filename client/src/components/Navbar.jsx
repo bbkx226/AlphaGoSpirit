@@ -3,9 +3,10 @@ import { AiOutlineBars } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import logo from "../assets/logo-removebg.png";
 
-const NavBarItem = ({ title, classprops }) => (
-  <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>
-);
+const NavBarItem = ({ title, classprops, position}) => {
+  const urls = ['https://coinmarketcap.com/currencies/ethereum/', '', 'https://speedrunethereum.com/', '']
+  return <a href={urls[position]} target="_blank"><li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li></a>
+};
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
-          <NavBarItem key={item + index} title={item} />
+          <NavBarItem key={item + index} title={item} position={index}/>
         ))}
 
       </ul>

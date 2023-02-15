@@ -1,6 +1,6 @@
 import React from "react";
 import { BsShieldFillCheck } from "react-icons/bs";
-import { BiSearchAlt } from "react-icons/bi"; // https://react-icons.github.io/react-icons/
+import { MdMobileFriendly } from "react-icons/Md"; // https://react-icons.github.io/react-icons/
 import { RiHeart2Fill } from "react-icons/Ri";
 
 const ServiceCard = ({ color, title, icon, subtitle }) => (
@@ -23,11 +23,11 @@ const Services = () => (
       <div className="flex-1 flex flex-col justify-start items-start">
         <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient ">
           Why Opac1ty? <br/>
-          Services that we provides
+          What do we offer?
         </h1>
         <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
-          The best choice for buying and selling your crypto assets, with the
-          various super friendly services we offer
+          Our platform provides a range of user-friendly services, 
+          making it the optimal choice for buying and selling your crypto assets
         </p>
       </div>
 
@@ -36,19 +36,20 @@ const Services = () => (
           color="bg-[#2952E3]"
           title="Security gurantee"
           icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="We ensure the security and privacy of our products, while also maintaining their high quality"
         />
         <ServiceCard
-          color="bg-[#8945F8]"
-          title="Best exchange rates"
-          icon={<BiSearchAlt fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          color="bg-[#90EE90]"
+          title="User-friendly interface"
+          icon={<MdMobileFriendly fontSize={21} className="text-white" />}
+          subtitle="A clean and intuitive user interface can help users navigate your app more easily and provide a positive user experience"
         />
         <ServiceCard
           color="bg-[#F84550]"
           title="Fastest transactions"
           icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="Opac1ty offers lightning-fast transaction speeds, 
+          allowing you to quickly and easily transfer assets and complete transactions with ease"
         />
       </div>
     </div>

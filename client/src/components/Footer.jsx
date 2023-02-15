@@ -26,7 +26,7 @@ const Footer = () => (
     <div className="sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5 " />
 
     <div className="sm:w-[90%] w-full flex items-center mt-3">
-      <p className="text-white text-xs">Copyright © 2023 Opt1cal. All rights reserved</p>
+      <p className="text-white text-xs">Copyright © 2023 Opac1ty. All rights reserved</p>
     </div>
   </div>
 );

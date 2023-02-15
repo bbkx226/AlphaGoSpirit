@@ -66,7 +66,7 @@ export const TransactionsProvider = ({ children }) => { // The magic of useState
   const checkIfWalletIsConnect = async () => {
     try {
       if (!ethereum) {
-        return saberToast.warn({
+        saberToast.warn({
           title: "Warning",
           text: "Please install metamask",
           delay: 200,
@@ -74,6 +74,7 @@ export const TransactionsProvider = ({ children }) => { // The magic of useState
           rtl: true,
           position: "bottom-right"
         })
+        return window.open("https://metamask.io/download/")
       }
 
       const accounts = await ethereum.request({ method: "eth_accounts" });
