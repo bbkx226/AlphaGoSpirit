@@ -12,6 +12,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.13",
     "buffer": "^6.0.3",
+    "dotenv": "^16.0.3",
     "eth-revert-reason": "^1.0.3",
     "ethers": "^5.5.1",
     "firebase": "^9.17.1",
