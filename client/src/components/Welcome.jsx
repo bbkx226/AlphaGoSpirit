@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum, SiBlockchaindotcom } from "react-icons/si";
 import { BsCashStack, BsFillPatchQuestionFill } from "react-icons/bs";
@@ -8,6 +8,7 @@ import { FaUserFriends } from "react-icons/Fa";
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
+import { saberToast } from "../utils/toast";
 // const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
 const Input = ({ placeholder, name, type, value, handleChange }) => (
@@ -22,7 +23,8 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const GeneratePunk = () => {
-  const randomNum = Math.floor(Math.random() * 100) + 1; // generate random number between 1 and 10
+  const [randomNum, setRandomNum ]= useState(Math.floor(Math.random() * 100) + 1); // generate random number between 1 and 10
+
   return (
       <img src={`punks/${randomNum}.png`} alt="Random Image" className="w-11 h-11"/>
   );
@@ -37,7 +39,17 @@ const Welcome = () => {
 
     e.preventDefault(); // To prevent the page from reloading (kinda important in React when event happens)
 
-    if (!addressTo || !amount || !keyword || !message) return;
+    if (!addressTo || !amount || !keyword || !message) {
+      return saberToast.info({
+        title: "Friendly Reminder",
+        text: `Ensure all input box have been filled`,
+        delay: 200,
+        duration: 2600,
+        rtl: true,
+        position: "bottom-right"
+      })
+
+    }
 
     sendTransaction();
   };

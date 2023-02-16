@@ -164,8 +164,15 @@ export const TransactionsProvider = ({ children }) => { // The magic of useState
         console.log("No ethereum object");
       }
     } catch (error) {
-      console.log(error);
-
+      saberToast.error({
+        title: "Error occurred",
+        text: "The address does not exist",
+        delay: 200,
+        duration: 2600,
+        rtl: true,
+        position: "bottom-right"
+      })
+      
       throw new Error("No ethereum object");
     }
   };

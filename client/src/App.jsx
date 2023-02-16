@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Welcome, Footer, Services, Transaction } from './components'
+import { Navbar, Welcome, Footer, Services, Transaction, QrCode } from './components'
 
 const App = () => {
   return (
@@ -9,6 +9,7 @@ const App = () => {
         <Welcome />
       </div>
       <Services />
+      <QrCode />
       <Transaction />
       <Footer />
     </div>
