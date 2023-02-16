@@ -36,13 +36,13 @@ const Services = () => (
           color="bg-[#2952E3]"
           title="Security gurantee"
           icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
-          subtitle="We ensure the security and privacy of our products, while also maintaining their high quality"
+          subtitle="We ensure the security and privacy of Opac1ty, while also maintaining its high quality"
         />
         <ServiceCard
           color="bg-[#90EE90]"
           title="User-friendly interface"
           icon={<MdMobileFriendly fontSize={21} className="text-white" />}
-          subtitle="A clean and intuitive user interface can help users navigate your app more easily and provide a positive user experience"
+          subtitle="A clean and intuitive user interface can help users navigate our app more easily and provide a positive user experience"
         />
         <ServiceCard
           color="bg-[#F84550]"
