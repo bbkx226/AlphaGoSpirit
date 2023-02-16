@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
-import { SiEthereum } from "react-icons/si";
-import { BsInfoCircle } from "react-icons/bs";
+import { SiEthereum, SiBlockchaindotcom } from "react-icons/si";
+import { BsCashStack, BsFillPatchQuestionFill } from "react-icons/bs";
+import { BiNetworkChart } from "react-icons/Bi";
 import { RiWallet3Fill } from "react-icons/Ri";
-
+import { FaUserFriends } from "react-icons/Fa";
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
@@ -22,6 +23,7 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
+
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
   
   const handleSubmit = (e) => {
@@ -39,7 +41,7 @@ const Welcome = () => {
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
         <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
-            Hi there, <br /> We are Opac1ty!
+            Hi there, <br /> We are Opac1ty
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-8/12 w-11/12 text-base">
             Enter the realm of crypto. Easily trade cryptocurrencies on Opac1ty.
@@ -56,21 +58,30 @@ const Welcome = () => {
               </p>
             </button>
           )}
-
-          <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
-            <div className={`rounded-tl-2xl ${companyCommonStyles}`}>
-              Ethereum
+          <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10 border-white">
+            <div className="hover:bg-black transition duration-300 ease-in-out flex flex-col items-center justify-center rounded-lg shadow-md p-6">
+              <SiEthereum className="w-8 h-8 mb-2 text-white "/>
+              <h3 className="text-white">Ethereum</h3>
             </div>
-            <div className={companyCommonStyles}>Web 3.0</div>
-            <div className={`sm:tr-2xl ${companyCommonStyles}`}>
-              Blockchain
+            <div className="hover:bg-black transition duration-300 ease-in-out flex flex-col items-center justify-center rounded-lg shadow-md p-6">
+              <BiNetworkChart className="w-8 h-8 mb-2 text-white"/>
+              <h3 className="text-white">Web 3.0</h3>
             </div>
-            <div className={`sm:bl-2xl ${companyCommonStyles}`}>
-              Reliability
+            <div className="hover:bg-black transition duration-300 ease-in-out flex flex-col items-center justify-center rounded-lg shadow-md p-6">
+              <SiBlockchaindotcom className="w-8 h-8 mb-2 text-white "/>
+              <h3 className="text-white">Blockchain</h3>
             </div>
-            <div className={companyCommonStyles}>Low Fees</div>
-            <div className={`rounded-br-2xl ${companyCommonStyles}`}>
-              Decentralized
+            <div className="hover:bg-black transition duration-300 ease-in-out flex flex-col items-center justify-center rounded-lg shadow-md p-6">
+              <FaUserFriends className="w-8 h-8 mb-2 text-white "/>
+              <h3 className="text-white">Reliability</h3>
+            </div>
+            <div className="hover:bg-black transition duration-300 ease-in-out flex flex-col items-center justify-center rounded-lg shadow-md p-6">
+              <BsCashStack className="w-8 h-8 mb-2 text-white "/>
+              <h3 className="text-white">Low Fees</h3>
+            </div>
+            <div className="hover:bg-black transition duration-300 ease-in-out flex flex-col items-center justify-center rounded-lg shadow-md p-6">
+              <BsFillPatchQuestionFill className="w-8 h-8 mb-2 text-white "/>
+              <h3 className="text-white">Decentralized</h3>
             </div>
           </div>
         </div>
@@ -82,7 +93,6 @@ const Welcome = () => {
                 <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">
                   <SiEthereum fontSize={21} color="#fff" />
                 </div>
-                <BsInfoCircle fontSize={17} color="#F7EF8A" />
               </div>
               <div>
                 <p className="text-yellow-200 font-light text-sm">
@@ -115,6 +125,7 @@ const Welcome = () => {
               )}
           </div>
         </div>
+
       </div>
     </div>
   );

@@ -12,14 +12,12 @@ const Footer = () => (
         <a href="https://coinmarketcap.com/currencies/ethereum/" target="_blank">
           <p className="text-white text-base text-center mx-2 cursor-pointer">Market</p>
         </a>
-
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Exchange</p>
-
+        <a href="https://coinmarketcap.com/rankings/exchanges/" target="_blank">
+          <p className="text-white text-base text-center mx-2 cursor-pointer">Exchange</p>
+        </a>
         <a href="https://speedrunethereum.com/" target="_blank">
           <p className="text-white text-base text-center mx-2 cursor-pointer">Tutorials</p>
         </a>
-
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Wallets</p>
       </div>
     </div>
 
