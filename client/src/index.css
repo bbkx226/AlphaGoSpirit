@@ -29,18 +29,25 @@ body {
   radial-gradient(at 0% 100%, #EEB238FF 0, transparent 50%);
 }
 
+.gradient-bg-qrcode {
+  background-color:#0f0e13;
+  background-image:
+  radial-gradient(at 0% 0%, #EEB238FF 0, transparent 50%),
+  radial-gradient(at 100% 150%, #DDB65DFF 0, transparent 50%);
+}
+
 .gradient-bg-transactions {
   background-color: #0f0e13;
   background-image: 
-  radial-gradient(at 0% 0%, #EEB238FF 0, transparent 50%),
-  radial-gradient(at 100% 150%, #DDB65DFF 0, transparent 50%);
+  radial-gradient(at 100% -50%, #DDB65DFF 0, transparent 50%),
+  radial-gradient(at 0% 150%, #EEB238FF 0, transparent 50%);
 }
 
 .gradient-bg-footer {
   background-color: #0f0e13;
   background-image: 
-    radial-gradient(at 100% -50%, #DDB65DFF 0, transparent 50%), 
-    radial-gradient(at 0% 150%, #EEB238FF 0, transparent 50%);
+    radial-gradient(at 0% -50%, #EEB238FF 0, transparent 50%), 
+    radial-gradient(at 0% 150%, #000 0, transparent 50%);
 }
 
 .blue-glassmorphism {
