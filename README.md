@@ -42,9 +42,9 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 Opac1ty was developed by Team AlphaGoSpirit, a group of passionate developers from Asia Pacific University (APU) and Tunku Abdul Rahman University of Management and Technology (TARUMT). The team includes:
 
 Lo Sau Kang - **`Team Leader | Presenter | Creative Director`** <br/>
-Brandon Ban Kai Xian - **`Blockchain Developer | Full Stack Developer | UX/UI DEsigner`** <br/>
+Brandon Ban Kai Xian - **`Blockchain Developer | Full Stack Developer | UX/UI Designer`** <br/>
 They Kai Zhe - **`README.md Writer | Presenter | App Tester`** <br/>
 Yong Jun Fai -**`Presenter | App Tester | Creative Director`** <br/>
-Ryan Wong Yi Syen - **`UX DEsigner`** <br/>
+Ryan Wong Yi Syen - **`UX Designer`** <br/>
 
 We are committed to building innovative and secure solutions for the blockchain industry.
