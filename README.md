@@ -19,6 +19,7 @@ Opac1ty uses the following technologies:
 - React.js and Tailwind CSS for the front-end
 - Solidity and Hardhat for smart contracts
 - Ethers.js for interacting with the Ethereum blockchain
+- Firebase for Web Hosting
 
 ## Getting Started
 To get started with this app, follow these steps:
@@ -43,9 +44,9 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 Opac1ty was developed by Team AlphaGoSpirit, a group of passionate developers from Asia Pacific University (APU) and Tunku Abdul Rahman University of Management and Technology (TARUMT). The team includes:
 
 Lo Sau Kang - **`Team Leader | Presenter | Creative Director`** <br/>
-Brandon Ban Kai Xian - **`Blockchain Developer | Full Stack Developer | UX/UI Designer`** <br/>
+Brandon Ban Kai Xian - **`Blockchain Developer | Full Stack Developer | UX/UI Designer | Creative Director `** <br/>
 They Kai Zhe - **`Creative Director | Presenter | App Tester | README.md Author`** <br/>
 Yong Jun Fai -**`Presenter | App Tester | Creative Director`** <br/>
-Ryan Wong Yi Syen - **`UX Designer`** <br/>
+Ryan Wong Yi Syen - **`Creative Director | UX Designer`** <br/>
 
 We are committed to building innovative and secure solutions for the blockchain industry.
