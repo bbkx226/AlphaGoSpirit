@@ -12,16 +12,16 @@ The web app can be accessed using this [link](https://blockchainapp-4e293.web.ap
 - QR Code walk-in payment (returns the address of the recipient)
 
 ## Technologies Used
-- React.js for the front-end
-- Solidity and Ethereum for smart contracts
-- Web3.js for interacting with the Ethereum blockchain
+- React.js and Tailwind CSS for the front-end
+- Solidity and Hardhat framework for smart contracts
+- Ethers.js for interacting with the Ethereum blockchain
 
 ## Getting Started
 To get started with this app, follow these steps:
 1. Clone this repository
 2. Install the required dependencies using npm install
 3. Install and configure any crypto wallet of your choice (with a browser extension) in your browser to interact with the Ethereum network
-4. Run the app locally using npm start
+4. Run the app locally using `npm run dev` or `npm run start`
 5. Contributing
 6. Contributions to this project are welcome. To contribute, fork this repository and create a pull request with your changes.
 
