@@ -36,8 +36,14 @@ export const TransactionsProvider = ({ children }) => { // The magic of useState
   
   const handleChange = (e, name) => {
     setFormData((prevState) => ({ ...prevState, [name]: e.target.value }));
+    console.log(formData)
   };
  
+  const handleAddressChange = (name, data) => {
+    setFormData((prevState) => ({ ...prevState, [name]: data }));
+    console.log(formData)
+  }
+
   const getAllTransactions = async () => {
     try {
       if (ethereum) {
@@ -147,9 +153,17 @@ export const TransactionsProvider = ({ children }) => { // The magic of useState
           }],
         });
 
+
         // Transaction ID
         const transactionHash = await transactionsContract.addToBlockchain(addressTo, parsedAmount, message, keyword);
-
+        saberToast.info({
+          title: "Friendly Remainder",
+          text: `Processing...`,
+          delay: 200,
+          duration: 50000,
+          rtl: true,
+          position: "top-right"
+        })
         setIsLoading(true);
         console.log(`Loading - ${transactionHash.hash}`);
         await transactionHash.wait();
@@ -159,14 +173,24 @@ export const TransactionsProvider = ({ children }) => { // The magic of useState
         const transactionsCount = await transactionsContract.getTransactionCount();
 
         setTransactionCount(transactionsCount.toNumber());
-        window.location.reload();
+        saberToast.success({
+          title: "Congrats!",
+          text: "Your ETH has successfully been transferred",
+          delay: 200,
+          duration: 1000,
+          rtl: true,
+          position: "top-right"
+        })
+        setTimeout(() => {
+          window.location.reload();
+        }, 1000);
       } else {
         console.log("No ethereum object");
       }
     } catch (error) {
       saberToast.error({
         title: "Error occurred",
-        text: "The address does not exist",
+        text: "Something went wrong...",
         delay: 200,
         duration: 2600,
         rtl: true,
@@ -193,6 +217,7 @@ export const TransactionsProvider = ({ children }) => { // The magic of useState
         isLoading,
         sendTransaction,
         handleChange,
+        handleAddressChange,
         formData,
       }}
     >

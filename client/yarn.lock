@@ -1152,6 +1152,11 @@
   "resolved" "https://registry.npmjs.org/@types/node/-/node-18.13.0.tgz"
   "version" "18.13.0"
 
+"@types/offscreencanvas@^2019.6.4":
+  "integrity" "sha512-PGcyveRIpL1XIqK8eBsmRBt76eFgtzuPiSTyKHZxnGemp2yzGzWpjYKAfK3wIMiU7eH+851yEpiuP8JZerTmWg=="
+  "resolved" "https://registry.npmjs.org/@types/offscreencanvas/-/offscreencanvas-2019.7.0.tgz"
+  "version" "2019.7.0"
+
 "@types/prop-types@*":
   "integrity" "sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w=="
   "resolved" "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
@@ -2048,6 +2053,13 @@
     "@protobufjs/utf8" "^1.1.0"
     "@types/node" ">=13.7.0"
     "long" "^5.0.0"
+
+"qr-scanner@^1.4.2":
+  "integrity" "sha512-kV1yQUe2FENvn59tMZW6mOVfpq9mGxGf8l6+EGaXUOd4RBOLg7tRC83OrirM5AtDvZRpdjdlXURsHreAOSPOUw=="
+  "resolved" "https://registry.npmjs.org/qr-scanner/-/qr-scanner-1.4.2.tgz"
+  "version" "1.4.2"
+  dependencies:
+    "@types/offscreencanvas" "^2019.6.4"
 
 "qr.js@0.0.0":
   "integrity" "sha512-c4iYnWb+k2E+vYpRimHqSu575b1/wKl4XFeJGpFmrJQz5I88v9aY2czh7s0w36srfCM1sXgC/xpoJz5dJfq+OQ=="
