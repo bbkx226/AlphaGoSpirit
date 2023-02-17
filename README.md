@@ -23,11 +23,12 @@ Opac1ty uses the following technologies:
 ## Getting Started
 To get started with this app, follow these steps:
 1. Clone this repository
-2. Install the required dependencies using npm install
-3. Install and configure any crypto wallet of your choice (with a browser extension) in your browser to interact with the Ethereum network
-4. Run the app locally using `npm run dev` or `npm run start`
-5. Contributing
-6. Contributions to this project are welcome. To contribute, fork this repository and create a pull request with your changes.
+2. Install the required dependencies for the client and smart contract folders using `npm install`. 
+3. You'll need to run this command separately for each folder: `cd client` and `npm install`, and then `cd ..`, `cd smart_contract` and `npm install`.
+4. Install and configure any crypto wallet of your choice (with a browser extension) in your browser to interact with the Ethereum network
+5. To run the application locally, navigate to the client folder by running `cd client`, then use either `npm run dev` or `npm run start`
+6. Contributions to this project are welcome. 
+7. To contribute, fork this repository, make your changes, and create a pull request with your proposed changes.
 
 ## Future Implementations
 Opac1ty has plans to add the following features in the future:
