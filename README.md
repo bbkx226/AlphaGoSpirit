@@ -44,7 +44,7 @@ Opac1ty was developed by Team AlphaGoSpirit, a group of passionate developers fr
 
 Lo Sau Kang - **`Team Leader | Presenter | Creative Director`** <br/>
 Brandon Ban Kai Xian - **`Blockchain Developer | Full Stack Developer | UX/UI Designer`** <br/>
-They Kai Zhe - **`README.md Writer | Presenter | App Tester`** <br/>
+They Kai Zhe - **`Creative Director | Presenter | App Tester | README.md Author`** <br/>
 Yong Jun Fai -**`Presenter | App Tester | Creative Director`** <br/>
 Ryan Wong Yi Syen - **`UX Designer`** <br/>
 
