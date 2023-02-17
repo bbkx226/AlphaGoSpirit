@@ -1,5 +1,6 @@
 # Opac1ty
 By Team AlphaGoSpirit <br />
+
 Opac1ty is a decentralized finance (DeFi) crypto wallet web application that allows users to securely store, manage and transact their cryptocurrency assets. The app is built on a decentralized blockchain network, which means that users have full control over their funds without the need for intermediaries like banks or financial institutions.
 
 ## Access
@@ -40,10 +41,10 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 ## About the Team
 Opac1ty was developed by Team AlphaGoSpirit, a group of passionate developers from Asia Pacific University (APU) and Tunku Abdul Rahman University of Management and Technology (TARUMT). The team includes:
 
-Lo Sau Kang, **`Team Leader | Presenter | Creative Director`**
-Brandon Ban Kai Xian, **`Blockchain Developer | Full Stack Developer | UX/UI DEsigner`**
-They Kai Zhe, **`README.md Writer | Presenter | App Tester`**
-Yong Jun Fai, **`Presenter | App Tester | Creative Director`**
-Ryan Wong Yi Syen, **`UX DEsigner`**
+Lo Sau Kang - **`Team Leader | Presenter | Creative Director`** <br/>
+Brandon Ban Kai Xian - **`Blockchain Developer | Full Stack Developer | UX/UI DEsigner`** <br/>
+They Kai Zhe - **`README.md Writer | Presenter | App Tester`** <br/>
+Yong Jun Fai -**`Presenter | App Tester | Creative Director`** <br/>
+Ryan Wong Yi Syen - **`UX DEsigner`** <br/>
 
 We are committed to building innovative and secure solutions for the blockchain industry.
